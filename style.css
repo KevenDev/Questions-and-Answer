@@ -47,9 +47,7 @@
   ===============
   */
   
-  *,
-  ::after,
-  ::before {
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,92 +55,73 @@
   body {
     background: var(--clr-grey-10);
     color: var(--clr-grey-1);
-    line-height: 1.5;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    letter-spacing: var(--spacing);
-    text-transform: capitalize;
-    line-height: 1.25;
-    margin-bottom: 0.75rem;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  h4 {
-    font-size: 0.875rem;
-  }
-  p {
-    margin-bottom: 1.25rem;
-    color: var(--clr-grey-5);
-    font-size: 0.875rem;
   }
 
 .container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     margin: 0 auto;
     width: 95vw;
-    height: 100%;
+    align-items: center;
 }
 
-.title{
+.title h2{
     color: var(--clr-gold);
     font-family: 'Great Vibes', cursive;
-    font-size: 38px;
-    margin-top: 10vh;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-top: 7.9rem;
+    margin-bottom: 3rem;
+    letter-spacing: var(--spacing);
 }
 
+
 .questions{
-    width:  30vw;
+    margin-top: 1rem;
 }
 
 .questions p{
     font-family: var(--ff-secondary);
     color: var(--clr-grey-1);
     letter-spacing: var(--spacing);
+    font-size: 0.88rem;
 }
 
-.first-question{
+.question-title{
     display: flex;
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
     border-radius: var(--radius);
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.second-question{
-    display: flex;
-    background: var(--clr-white);
-    box-shadow: var(--light-shadow);
-    border-radius: var(--radius);
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.third-question{
-    display: flex;
-    background: var(--clr-white);
-    box-shadow: var(--light-shadow);
-    border-radius: var(--radius);
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    margin-bottom: 2rem;   
+    padding: 1.5rem;  
+    justify-content: space-between;
+    align-items: center;
+    width:  90vw;
+ 
 }
 
 .btn-answer{
-    border: none;
+  border: none;
+  color: var(--clr-gold);
 }
 
+.text-answer{
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+    padding: 1.5rem;
+    margin-bottom: 2rem;   
+    justify-content: space-between;
+    align-items: center;
+    width:  90vw;
+}
+
+.text-answer p{
+  color: var(--clr-grey-5);
+  letter-spacing: normal;
+  font-size: 0.88rem;
+  line-height: 0.75rem;
+  line-height: 1.5;
+}
+
+.question-adjust{
+  margin-bottom: 2rem;
+}
